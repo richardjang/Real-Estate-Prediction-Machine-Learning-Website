@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		
+		<!--Javascript for Real Estate Median Prices-->
+<script>
+$(function () {
+$(function () {
+    $('#container').highcharts({
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        },
+        yAxis:
+        {
+              title: {
+                text: 'Housing Cost ($)'
+            }
+        },
+		
+		 tooltip: {
+            valuePrefix: '$'
+        },
+        title: {
+            text: 'San Jose Real Estate Median'
+        },
+		/*subtitle: {
+         text: 'By: Chheang, Doug, Richard',
+          x: -20
+        },*/
+        series: [{
+			
+            type: 'line',
+            name: 'Regression Line',
+            data: [[0, 761333], [11, 811555]],
+            marker: {
+                enabled: false
+            },
+            states: {
+                hover: {
+                    lineWidth: 1
+                }
+            },
+            enableMouseTracking: false
+        }, 
+		
+		{
+            type: 'scatter',
+            name: 'San Jose Median Price',
+            data: [/*480000, 485000, 488000, 499950, 500000, 499900, 499000, 489000, 475000, 484900, 495000, 538888 */],
+            marker: {
+                radius: 4
+            }
+        },
+		/*{
+            type: 'scatter',
+            name: 'Palo Alto Pricing',
+            data: [90000, 95000, 110000, 105000, 120000, 125000, 115000, 107000, 98000, 102000, 97000, 112000],
+            marker: {
+                radius: 4
+            }
+        }*/]
+    });
+});
+});
+
+</script>
+<!-- Javascript for Median Salary -->
+<script>
+$(function () {
+$(function () {
+    $('#container2').highcharts({
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        },
+        yAxis:
+        {
+              title: {
+                text: 'Housing Cost ($)'
+            }
+        },
+		
+		 tooltip: {
+            valuePrefix: '$'
+        },
+        title: {
+            text: 'San Jose Real Estate Average Salary'
+        },
+		/*subtitle: {
+          text: 'By: Chheang, Doug, Richard',
+          x: -20
+        },*/
+        series: [{
+			
+            type: 'line',
+            name: 'Regression Line',
+            data: [[0, 43000], [11, 43500]],
+            marker: {
+                enabled: false
+            },
+            states: {
+                hover: {
+                    lineWidth: 1
+                }
+            },
+            enableMouseTracking: false
+        }, 
+		
+		{
+            type: 'scatter',
+            name: 'San Jose Average yearly Salary (per Household)',
+            data: [/*40413, 39720, 40295, 41128, 42212*/],
+            marker: {
+                radius: 4
+            }
+        },
+	]
+    });
+});
+});
+
+</script>
+
+</head>
+	<body>
+<h1 style="text-align:center; font-family: Comic Sans MS;">YOU SHOULD BUY YOUR HOUSE IN: <h1 style=" color: blue; text-align:center; font-family: Comic Sans MS;">MAY</h1> </h1>	
+<div id="container" style="width:50%; height:450px; float: left;"></div>
+
+<div id="container2" style="width:50%; height:450px; float: right;"></div>
+
+	</body>
+</html>

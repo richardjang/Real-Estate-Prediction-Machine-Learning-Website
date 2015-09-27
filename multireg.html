@@ -1,0 +1,10 @@
+<html><header><link rel ="stylesheet" type = "text/css" href ="aboutus.css"/></header><body><div id = "contentleft"><div id = "wrapper"><h1 class = "centertext" style="color: blue; text-decoration:underline;">Multiple Regression Algorithm</h1><div style="width:25%"><br></div><p style="text-align: left; font-size: 23px;" class = "centertext">//Let M and B be arrays of corresponding slope and y-intercept<br>Len = M.Length<br>A[Len+1][Len] is a Matrix of Sets of Equations<br>R[Len] is an Array of coefficients used for Ranking<br><br>for i=1 to Len<br>for j=1 to Len+1<br>if j==Len+1<br>A[i][j]=0<br>for n=1 to Len<br>A[i][j] += A[i][n]<br>else A[i][j] = R[j]*M[j]*i + B[j]<br><br>//Let P be an array of constants<br>P[] = RREF(A)<br>return P[]<br></p></div></div>
+
+<div style ="position: absolute; right: 100px; top: 300px; ">
+<img src ="images/multiregfig.png">
+<br>Figure 3: Multiple Regression Equation
+
+</div>
+
+
+</body></html>

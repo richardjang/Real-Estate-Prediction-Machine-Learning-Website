@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		
+		<!--Javascript for Real Estate Median Prices-->
+<script>
+$(function () {
+$(function () {
+    $('#container').highcharts({
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        },
+        yAxis:
+        {
+              title: {
+                text: 'Housing Cost ($)'
+            }
+        },
+		
+		 tooltip: {
+            valuePrefix: '$'
+        },
+        title: {
+            text: 'Palo Alto Real Estate Median'
+        },
+		/*subtitle: {
+         text: 'By: Chheang, Doug, Richard',
+          x: -20
+        },*/
+        series: [{
+			
+            type: 'line',
+            name: 'Regression Line',
+            data: [[0, 1150000], [11, 1800000]],
+            marker: {
+                enabled: false
+            },
+            states: {
+                hover: {
+                    lineWidth: 1
+                }
+            },
+            enableMouseTracking: false
+        }, 
+		
+		{
+            type: 'scatter',
+            name: 'Palo Alto Median Price',
+            data: [ 1498000, 1250000, 1250000, 1350000, 1250000, 1400000, 1298000, 1325000, 1698000, 1450000, 1595000, 2198000 ],
+            marker: {
+                radius: 4
+            }
+        },
+		/*{
+            type: 'scatter',
+            name: 'Palo Alto Pricing',
+            data: [90000, 95000, 110000, 105000, 120000, 125000, 115000, 107000, 98000, 102000, 97000, 112000],
+            marker: {
+                radius: 4
+            }
+        }*/]
+    });
+});
+});
+
+</script>
+<!-- Javascript for Median Salary -->
+<script>
+$(function () {
+$(function () {
+    $('#container2').highcharts({
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        },
+        yAxis:
+        {
+              title: {
+                text: 'Housing Cost ($)'
+            }
+        },
+		
+		 tooltip: {
+            valuePrefix: '$'
+        },
+        title: {
+            text: 'Palo Alto Real Estate Average Salary'
+        },
+		/*subtitle: {
+          text: 'By: Chheang, Doug, Richard',
+          x: -20
+        },*/
+        series: [{
+			
+            type: 'line',
+            name: 'Regression Line',
+            data: [[0, 90000], [11, 115000]],
+            marker: {
+                enabled: false
+            },
+            states: {
+                hover: {
+                    lineWidth: 1
+                }
+            },
+            enableMouseTracking: false
+        }, 
+		
+		{
+            type: 'scatter',
+            name: 'Palo Alto Average yearly Salary (per Household)',
+            data: [130000, 129900, 135000, 175000, 188888, 199000, 180000, 200000, 186000, 189900, 189000, 205000],
+            marker: {
+                radius: 4
+            }
+        },
+	]
+    });
+});
+});
+
+</script>
+
+</head>
+	<body>
+<h1 style="text-align:center; font-family: Comic Sans MS;">YOU SHOULD BUY YOUR HOUSE IN: <h1 style=" color: blue; text-align:center; font-family: Comic Sans MS;">JUNE</h1> </h1>	
+<div id="container" style="width:50%; height:450px; float: left;"></div>
+
+<div id="container2" style="width:50%; height:450px; float: right;"></div>
+
+	</body>
+</html>

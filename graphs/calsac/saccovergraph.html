@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		
+		<!--Javascript for Real Estate Median Prices-->
+<script>
+$(function () {
+$(function () {
+    $('#container').highcharts({
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr']
+        },
+        yAxis:
+        {
+              title: {
+                text: 'Housing Cost ($)'
+            }
+        },
+		
+		 tooltip: {
+            valuePrefix: '$'
+        },
+        title: {
+            text: 'Sacramento Real Estate Median'
+        },
+		/*subtitle: {
+         text: 'By: Chheang, Doug, Richard',
+          x: -20
+        },*/
+        series: [{
+			
+            type: 'line',
+            name: 'Regression Line',
+            data: [[0, 125000], [63, 250000]],
+            marker: {
+                enabled: false
+            },
+            states: {
+                hover: {
+                    lineWidth: 1
+                }
+            },
+            enableMouseTracking: false
+        }, 
+		
+		{
+            type: 'scatter',
+            name: 'Sacramento Median Price',
+            data: [158900, 159000, 155000, 150000, 150000, 149900, 147500, 140000, 139900, 139900, 137000, 135000, 135000, 139000, 139000, 135000, 135000, 136250, 135000, 130500, 129550, 130000, 129500, 129500, 130000, 129900, 135000, 175000, 188888, 199000, 180000, 200000, 186000, 189900, 189000, 205000, 219900, 229900, 235000, 239900, 234000, 230000, 225000, 225000, 214319, 214900, 215101, 219000, 234950, 248000, 235000, 240000, 237950, 238000, 238000, 227000, 230000, 229900, 230000, 249000, 259000],
+            marker: {
+                radius: 4
+            }
+        },
+		/*{
+            type: 'scatter',
+            name: 'Palo Alto Pricing',
+            data: [90000, 95000, 110000, 105000, 120000, 125000, 115000, 107000, 98000, 102000, 97000, 112000],
+            marker: {
+                radius: 4
+            }
+        }*/]
+    });
+});
+});
+
+</script>
+<!-- Javascript for Median Salary -->
+<script>
+$(function () {
+$(function () {
+    $('#container2').highcharts({
+        xAxis: {
+            categories: ['2010', '2011', '2012', '2013', '2014']
+        },
+        yAxis:
+        {
+              title: {
+                text: 'Housing Cost ($)'
+            }
+        },
+		
+		 tooltip: {
+            valuePrefix: '$'
+        },
+        title: {
+            text: 'Sacramento Real Estate Average Salary'
+        },
+		/*subtitle: {
+          text: 'By: Chheang, Doug, Richard',
+          x: -20
+        },*/
+        series: [{
+			
+            type: 'line',
+            name: 'Regression Line',
+            data: [[0, 61500], [4, 56000]],
+            marker: {
+                enabled: false
+            },
+            states: {
+                hover: {
+                    lineWidth: 1
+                }
+            },
+            enableMouseTracking: false
+        }, 
+		
+		{
+            type: 'scatter',
+            name: 'Sacramento Average yearly Salary (per Household)',
+            data: [62295, 60079, 57121, 57638, 57027],
+            marker: {
+                radius: 4
+            }
+        },
+	]
+    });
+});
+});
+
+</script>
+
+</head>
+	<body>
+<h1 style="text-align:center; font-family: Comic Sans MS;">Sacramento Housing Prices and Median House Income Overview </h1>	
+<div id="container" style="width:50%; height:450px; float: left;"></div>
+
+<div id="container2" style="width:50%; height:450px; float: right;"></div>
+
+	</body>
+</html>

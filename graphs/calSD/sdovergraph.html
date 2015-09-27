@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		
+		<!--Javascript for Real Estate Median Prices-->
+<script>
+$(function () {
+$(function () {
+    $('#container').highcharts({
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan']
+        },
+        yAxis:
+        {
+              title: {
+                text: 'Housing Cost ($)'
+            }
+        },
+		
+		 tooltip: {
+            valuePrefix: '$'
+        },
+        title: {
+            text: 'San Diego Real Estate Median'
+        },
+		/*subtitle: {
+         text: 'By: Chheang, Doug, Richard',
+          x: -20
+        },*/
+        series: [{
+			
+            type: 'line',
+            name: 'Regression Line',
+            data: [[0, 400999], [59, 520000]],
+            marker: {
+                enabled: false
+            },
+            states: {
+                hover: {
+                    lineWidth: 1
+                }
+            },
+            enableMouseTracking: false
+        }, 
+		
+		{
+            type: 'scatter',
+            name: 'San Diego Median Price',
+            data: [460000, 454800, 449000, 439900, 429300, 400000, 399000, 375000, 359000, 359000, 375000, 379900, 385000, 395000, 399000, 399000, 398000, 395000, 389900, 389000, 375000, 385000, 399000, 439000, 469000, 499900, 539000, 537900, 549000, 549000, 529900, 549000, 539000, 540000, 530000, 579000, 575000, 549000, 524900, 525000, 499000, 490000, 485000, 480000, 474900, 479900, 487900, 499000, 499000, 520000, 525000, 525000, 519900, 499900, 500000, 509000, 497000, 499000, 489000, 509000, 519900],
+            marker: {
+                radius: 4
+            }
+        },
+		/*{
+            type: 'scatter',
+            name: 'Palo Alto Pricing',
+            data: [90000, 95000, 110000, 105000, 120000, 125000, 115000, 107000, 98000, 102000, 97000, 112000],
+            marker: {
+                radius: 4
+            }
+        }*/]
+    });
+});
+});
+
+</script>
+<!-- Javascript for Median Salary -->
+<script>
+$(function () {
+$(function () {
+    $('#container2').highcharts({
+        xAxis: {
+            categories: ['2010', '2011', '2012', '2013', '2014']
+        },
+        yAxis:
+        {
+              title: {
+                text: 'Housing Cost ($)'
+            }
+        },
+		
+		 tooltip: {
+            valuePrefix: '$'
+        },
+        title: {
+            text: 'San Diego Real Estate Average Salary'
+        },
+		/*subtitle: {
+          text: 'By: Chheang, Doug, Richard',
+          x: -20
+        },*/
+        series: [{
+			
+            type: 'line',
+            name: 'Regression Line',
+            data: [[0, 65000], [4, 61000]],
+            marker: {
+                enabled: false
+            },
+            states: {
+                hover: {
+                    lineWidth: 1
+                }
+            },
+            enableMouseTracking: false
+        }, 
+		
+		{
+            type: 'scatter',
+            name: 'San Diego Average yearly Salary (per Household)',
+            data: [65412, 64021, 61602, 61206, 61426],
+            marker: {
+                radius: 4
+            }
+        },
+	]
+    });
+});
+});
+
+</script>
+
+</head>
+	<body>
+<h1 style="text-align:center; font-family: Comic Sans MS;">San Diego Housing Prices and Median Household Income Overview </h1>	
+<div id="container" style="width:50%; height:450px; float: left;"></div>
+
+<div id="container2" style="width:50%; height:450px; float: right;"></div>
+
+	</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		
+		<!--Javascript for Real Estate Median Prices-->
+<script>
+$(function () {
+$(function () {
+    $('#container').highcharts({
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan']
+        },
+        yAxis:
+        {
+              title: {
+                text: 'Housing Cost ($)'
+            }
+        },
+		
+		 tooltip: {
+            valuePrefix: '$'
+        },
+        title: {
+            text: 'San Jose Real Estate Median'
+        },
+		/*subtitle: {
+         text: 'By: Chheang, Doug, Richard',
+          x: -20
+        },*/
+        series: [{
+			
+            type: 'line',
+            name: 'Regression Line',
+            data: [[0, 459999], [59, 711111]],
+            marker: {
+                enabled: false
+            },
+            states: {
+                hover: {
+                    lineWidth: 1
+                }
+            },
+            enableMouseTracking: false
+        }, 
+		
+		{
+            type: 'scatter',
+            name: 'San Jose Median Price',
+            data: [499900, 499000, 499000, 495000, 475000, 463000, 455275, 449995, 415000, 420000, 439900, 459900, 480000, 485000, 488000, 499950, 500000, 499900, 499000, 489000, 475000, 484900, 495000, 538888, 525000, 550000, 579000, 608000, 599000, 614955, 625000, 610000, 630000, 619980, 650000, 650000, 695000, 669999, 649900, 649000, 639900, 599999, 612000, 599000, 589000, 625000, 645000, 650000, 680000, 682500, 678500, 660000, 659888, 650000, 648900, 630000, 642000, 685000, 698000, 724999, 709000],
+            marker: {
+                radius: 4
+            }
+        },
+		/*{
+            type: 'scatter',
+            name: 'Palo Alto Pricing',
+            data: [90000, 95000, 110000, 105000, 120000, 125000, 115000, 107000, 98000, 102000, 97000, 112000],
+            marker: {
+                radius: 4
+            }
+        }*/]
+    });
+});
+});
+
+</script>
+<!-- Javascript for Median Salary -->
+<script>
+$(function () {
+$(function () {
+    $('#container2').highcharts({
+        xAxis: {
+            categories: ['2010', '2011', '2012', '2013', '2014']
+        },
+        yAxis:
+        {
+              title: {
+                text: 'Housing Cost ($)'
+            }
+        },
+		
+		 tooltip: {
+            valuePrefix: '$'
+        },
+        title: {
+            text: 'San Jose Real Estate Average Salary'
+        },
+		/*subtitle: {
+          text: 'By: Chheang, Doug, Richard',
+          x: -20
+        },*/
+        series: [{
+			
+            type: 'line',
+            name: 'Regression Line',
+            data: [[0, 40000], [4, 42000]],
+            marker: {
+                enabled: false
+            },
+            states: {
+                hover: {
+                    lineWidth: 1
+                }
+            },
+            enableMouseTracking: false
+        }, 
+		
+		{
+            type: 'scatter',
+            name: 'San Jose Average yearly Salary (per Household)',
+            data: [40413, 39720, 40295, 41128, 42212],
+            marker: {
+                radius: 4
+            }
+        },
+	]
+    });
+});
+});
+
+</script>
+
+</head>
+	<body>
+<h1 style="text-align:center; font-family: Comic Sans MS;">San Jose Housing Prices and Median Household Income Overview </h1>	
+<div id="container" style="width:50%; height:450px; float: left;"></div>
+
+<div id="container2" style="width:50%; height:450px; float: right;"></div>
+
+	</body>
+</html>

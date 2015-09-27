@@ -1,0 +1,162 @@
+<html>
+<head>
+<title> CMPE 130 Project: Lets Talk Real estate! </title>
+<link rel ="stylesheet" type = "text/css" href ="realestate.css"/>
+<link rel="shortcut icon" href="project/images/houseicon.png" />
+
+<script type ="text/javascript" src="realestate.js"></script>
+
+<!-- Linking to Jquery Library-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+
+<!--Used for changing color sections -->
+<script type = "text/javascript">
+$(document).ready(function(){
+$('.test').on('click', function() {
+  $('.test').attr('class', function(index, classNames) {
+      return 'test';
+  });  
+
+  $(this).attr('class', function(index, classNames) {
+      return classNames + ' clicked';
+  });
+});
+});
+</script>
+
+
+
+<!--THESE ARE ALL USED FOR CAROUSEL-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href = "css/bootstrap.min.css" rel = "stylesheet">
+<link href = "css/styles.css" rel = "stylesheet">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+
+
+</head>
+
+
+<body>
+
+<div id = "nav">
+	<ul>
+	<!--	<img style ="margin-top: 10px" class = "hvr-grow" src = "project/images/home_button.png"></img>-->
+		
+		<li class ="centerit">&nbsp;&nbsp;&nbsp;Real Estate Machine Learning - CMPE 130</li>
+
+		
+	</ul>
+	
+</div>
+
+<div id ="middle">
+
+
+	<div id = "contentright">
+	<!--ORDERED LIST TO LINK CLASS TO OTHER PAGES-->
+	
+		<ul>
+			
+		<a href ="aboutus.html" style =" text-decoration: none;" target ="iframe_a" ><li id ="one" class ="test">1.) Project Summary</li></a>
+		<a href ="algdes.html" style =" text-decoration: none;" target = "iframe_a"><li id ="two" class ="test">2.) Design Abstract</li></a>
+		<a href ="explain.html" style =" text-decoration: none;" target = "iframe_a"><li id ="three" class ="test">3.) The Machine Learning</li></a>
+		<a href ="main.html" style =" text-decoration: none;" target = "iframe_a"><li id ="three" class ="test">4.) Prediction Algorithm</li></a>
+		<a href ="linearreg.html" style =" text-decoration: none;" target = "iframe_a"><li id ="four" class ="test">4a.) Linear Regression</li></a>
+		<a href ="getslope.html" style =" text-decoration: none;" target = "iframe_a"><li id ="five" class ="test">4b.) Get Slope</li></a>
+		<a href ="multireg.html" style =" text-decoration: none;" target = "iframe_a"><li id ="six" class ="test">4c.) Multiple Regression</li></a>
+		<a href ="http://www.ismll.uni-hildesheim.de/lehre/ml-07w/skript/ml-2up-01-linearregression.pdf" style =" text-decoration: none;" target = "iframe_a"><li id ="six" class ="test">5.) Reference</li></a>
+		
+		</ul>
+		
+	</div>
+	
+	<div id = "contentleft">
+	<iframe src="cover.html" height="800px" float ="left" width="100%" scrolling= "no"; name="iframe_a" ></iframe>
+	
+	</div>
+	
+
+	<div id ="dropleft">
+		<iframe src="dropdownmenu.html" height ="100%" width ="100%" scrolling ="no" name="iframe_b" ></iframe>
+	</div>
+	
+	<div id = "dropright">
+
+		<iframe src ="coverbot.html" height ="650px" width ="100%;" scrolling ="no" name ="iframe_c"></iframe>
+		
+	</div>
+
+
+	<div id = "footimg">
+		
+			<div id = "carousels">
+	
+		<div id = "myCarousel" class = "carousel slide" data-ride ="carousel">
+			<ol class = "carousel-indicators">
+				<li data-target = "#myCarousel" data-slide-to = "0" class = "active"></li>
+				<li data-target = "#myCarousel" data-slide-to = "1"></li>
+				<li data-target = "#myCarousel" data-slide-to = "2"></li>	
+			</ol>
+			
+			<div class = "carousel-inner">
+				<div class = "item active">
+					<img src = "project/widescreen/rsz_goldwide.jpg" alt ="sfskyline" class = "img-responsive">
+					<div class ="carousel-caption">
+						
+					</div>
+				</div>
+				
+				<div class ="item">
+					<img src = "project/widescreen/rsz_sfwide.jpg" alt ="laskyline" class = "img-responsive">
+					<div class ="carousel-caption">
+						
+					</div>
+				</div>
+				
+				<div class ="item">
+					<img src = "project/widescreen/rsz_sfsky.jpg" alt ="sjskyline" class = "img-responsive">
+					<div class ="carousel-caption">
+						
+					</div>
+				</div>
+			
+			</div>
+			
+			<a class ="carousel-control left" href = "#myCarousel" data-slide = "prev">
+				<span class = "icon-prev"></span>
+			</a>
+			
+			<a class ="carousel-control right" href = "#myCarousel" data-slide = "next">
+				<span class = "icon-next"></span>
+			</a>
+
+		</div>
+	</div>
+	
+	</div>
+	
+	<div id = "footer">
+	<p>Chheang Duong | Douglas Tran | Richard Jang &#169; 2015 </p>
+	</div>
+	
+</div>
+
+<!--used for the carousel-->
+<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src = "js/bootstrap.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+
+
+</html>
